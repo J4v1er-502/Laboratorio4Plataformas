@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hueso"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+        android:id="@+id/Layout_activityMain_actualizacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Secondary"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_activityMain_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            android:background="@drawable/background_round"
+            android:src="@drawable/ic_update"
+            app:tint="@color/primary"
+            android:contentDescription="@string/recargar" />
+
+        <TextView
+            android:id="@+id/textView_activityMain_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:text="@string/Texto_Layout_Actualización"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/LinearLayout_button_Download"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Boton_Layout_activityMain_actualizacion"
+            android:textColor="@color/tertiary"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView_diacumpleaños"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/textView_diacumpleaños"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Layout_activityMain_actualizacion" />
+
+    <TextView
+        android:id="@+id/textView_mes_cumpleaños"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/TextView_mes_cumpleanos"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_diacumpleaños" />
+
+
+    <Button
+        android:id="@+id/button_terminar_jornada"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/button_terminar_jornada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_diacumpleaños"
+        app:strokeColor="@color/Gray" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="370dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="370dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_terminar_jornada">
+
+        <TextView
+            android:id="@+id/constraintlayout_textView_Restaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/constraintlayout_textView_restaurante"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/constraintlayout_textView_Adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/constraintlayout_textView_ubicación"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintlayout_textView_Restaurant" />
+
+        <TextView
+            android:id="@+id/constraintlayout_textView_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/constraintlayout_textView_hora"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintlayout_textView_Adress" />
+
+        <Button
+            android:id="@+id/constraintlayout_button_iniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:paddingHorizontal="45dp"
+            android:text="@string/constraintlayout_button_iniciar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintlayout_textView_Time" />
+
+        <Button
+            android:id="@+id/constraintlayout_button_Details"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/constraintlayout_textView_detalles"
+            android:paddingHorizontal="45dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraintlayout_button_iniciar"
+            app:layout_constraintTop_toBottomOf="@+id/constraintlayout_textView_Time" />
+
+        <ImageView
+            android:id="@+id/constraintlayout_imageView_Direction"
+            android:layout_width="31dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/icono"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintlayout_textView_Adress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.906"
+            app:layout_constraintStart_toEndOf="@+id/constraintlayout_textView_Restaurant"
+            app:layout_constraintTop_toTopOf="@+id/constraintlayout_textView_Restaurant"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_directions"
+            app:tint="@color/Secondary" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

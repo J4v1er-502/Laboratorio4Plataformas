@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="Texto_Layout_Actualización">Actualización Disponible</string>
+    <string name="Boton_Layout_activityMain_actualizacion">Descargar</string>
+    <string name="TextView_mes_cumpleanos">29 de Junio</string>
+    <string name="button_terminar_jornada">Terminar Jornada</string>
+    <string name="constraintlayout_textView_restaurante">Panda Express</string>
+    <string name="constraintlayout_textView_hora">9:00AM 7:0PM</string>
+    <string name="constraintlayout_button_iniciar">Iniciar</string>
+    <string name="constraintlayout_textView_detalles">Detalles</string>
+    <string name="textView_diacumpleaños">Miercoles</string>
+    <string name="constraintlayout_textView_ubicación">Okland Mall, Food Court</string>
+    <string name="icono">icono</string>
+    <string name="recargar">recargar</string>
+    <string name="button_detailsActivity_Iniciar_Visita">Iniciar Visista</string>
+    <string name="textView_detailsActivity_Informacion">Información Adicional</string>
+    <string name="textView_detailsActivity_Horario">Horario de Atención</string>
+    <string name="textView_detailsActivity_Telefono">Teléfono</string>
+</resources>
